@@ -1,99 +1,77 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
- <link href="http://i.imgur.com/rVMH6fK.png" rel="shortcut icon" type="image/x-icon" />
-  <title>QuiverNetwork</title>
-  <meta name="description" content="website description" />
-  <meta name="keywords" content="website keywords, website keywords" />
-  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
-  <link rel="stylesheet" type="text/css" href="style/style.css" />
-</head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {margin: 0;}
 
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #F0E7E5;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+ul.sidenav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+ 
+ul.sidenav li a.active {
+    background-color: #038FAF;
+    color: white;
+}
+
+ul.sidenav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 900px) {
+    ul.sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+    }
+}
+</style>
+</head>
 <body>
-  <div id="main">
-    <div id="header">
-      <div id="logo">
-        <div id="logo_text">
-          <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1><a href="index.html">Quiver<span class="logo_colour">Network</span></a></h1>
-          <h2>"A new way to play!"</h2>
-        </div>
-      </div>
-      <div id="menubar">
-        <ul id="menu">
-          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
-          <li class="selected"><a href="page.html">Home</a></li>
-          <li><a href="examples.html">Gallery</a></li>
-          <li><a href="page.html">Information</a></li>
-          <li><a href="another_page.html">Servers</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
-    <div id="content_header"></div>
-    <div id="site_content">
-	<center>
-      <div id="banner"></div>
-	  </center>
-	  <div id="sidebar_container">
-        <div class="sidebar">
-          <div class="sidebar_top"></div>
-          <div class="sidebar_item">
-            <!-- insert your sidebar items here -->
-            <h3>Latest News</h3>
-            <h4>Staff</h4>
-            <h5>LOOKING FOR DEVELOPERS</h5>
-            <p><br /><a href="#">Read more</a></p>
-          </div>
-          <div class="sidebar_base"></div>
-        </div>
-        <div class="sidebar">
-          <div class="sidebar_top"></div>
-          <div class="sidebar_item">
-            <h3>Useful Links</h3>
-            <ul>
-              <li><a href="#">Vote</a></li>
-              <li><a href="#">Vote</a></li>
-              <li><a href="#">Vote</a></li>
-              <li><a href="#">Vote</a></li>
-            </ul>
-          </div>
-          <div class="sidebar_base"></div>
-        </div>
-        <div class="sidebar">
-          <div class="sidebar_top"></div>
-          <div class="sidebar_item">
-            <h3>Search</h3>
-            <form method="post" action="#" id="search_form">
-              <p>
-                <input class="search" type="text" name="search_field" value="Enter keywords....." />
-                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
-              </p>
-            </form>
-          </div>
-          <div class="sidebar_base"></div>
-        </div>
-      </div>
-      <div id="content">
-        <!-- insert the page content here -->
-        <h1>Welcome to QuiverNetwork Official site!</h1>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <h2></h2>
-        <p></p>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
-    </div>
-    <div id="content_footer"></div>
-    <div id="footer">
-      <p><a href="index.html">Home</a> | <a href="examples.html">Gallery</a> | <a href="page.html">Information</a> | <a href="another_page.html">Servers</a> | <a href="contact.html">Contact Us</a></p>
-      <p>Copyright &copy; InsaneBlaze</a></p>
-    </div>
-  </div>
+
+<ul class="sidenav">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<div class="content">
+ 
+
 </body>
 </html>
+
